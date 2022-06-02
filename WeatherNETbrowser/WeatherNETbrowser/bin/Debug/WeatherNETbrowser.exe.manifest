@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WeatherNETbrowser.exe" version="1.0.0.0" publicKeyToken="87cf82fa5fe662ca" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WeatherNETbrowser" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WeatherNETbrowser.exe" parameters="" />
+    <hostInBrowser xmlns="urn:schemas-microsoft-com:asm.v3" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" ID="Custom" SameSite="site">
+          <IPermission version="1" class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Access="Open" />
+          <IPermission UserQuota="1024000" version="1" class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Allowed="ApplicationIsolationByUser" />
+          <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Execution" />
+          <IPermission version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Clipboard="OwnClipboard" Window="SafeTopLevelWindows" />
+          <IPermission version="1" class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Level="SafePrinting" />
+          <IPermission version="1" class="System.Security.Permissions.MediaPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Audio="SafeAudio" Image="SafeImage" Video="SafeVideo" />
+          <IPermission version="1" class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Level="Safe" />
+        </PermissionSet>
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherNETbrowser.exe" size="9144">
+      <assemblyIdentity name="WeatherNETbrowser" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XOjBqsoAyXSN8134bF1Sh1HmdfMNXjLKWrrsYLhwcsE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DESKTOP-OGUEQHD\User" issuerKeyHash="093eeb1dec45aa69bfe33e98f5b0c568617f7377" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>uXM3gfHxK/Pox/kVIZ9rgTsDf14=</DigestValue></Reference></SignedInfo><SignatureValue>Cq5bi7ghKHp2WGimR0PmQJIVfcOnUYUe9MuprwAwcSr3rGvLckDp3Wb090mCHDjuqUVxk+6NY5iQFL/1yctrkBfeBrruo4RQQkjHC5bdu2pPoI9/PPBqDUbXwuI3HX9QyrlDvwy6dIuPxKGJgY/l0vMFpX8hSjrSg/W4ivW/aSs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xmn7nP7YmEgS2CnFQSBnRNQqZYzWIhkd70oo/KXHUplm91Zb3fhqU/S0MOn7iwxJgkMiJiIA/TyHyjk6r8T81linyUSw2SEQ/6O73i3CAnf1XF1Ss+VzfNAKMMWg/7j8krQSWPEP/gVKL6bGgOY6a2IBBY1/0ZPy5IfXXx5yl9U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5e7f033b816b9f2115f9c7e8f32bf1f1813773b9" Description="" Url=""><as:assemblyIdentity name="WeatherNETbrowser.exe" version="1.0.0.0" publicKeyToken="87cf82fa5fe662ca" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-OGUEQHD\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>A9quWH7D0TOokXMDZm5bk9GqtgQ=</DigestValue></Reference></SignedInfo><SignatureValue>bQpG+XBlTtZb4E/0w/ey69PHf48yG0aIzZxCikMAkv59xOvu/x7mojuM5qAKiDhl/4noV7uuuLW2wYM7k25NkUl2vTDI2veNfegk+yIS0PFFFhegzzJxr3Bdc1TCcseEB3jZopcU3a0Z7Mm/MMOxZfqNQNZwN20Y8Z7EWov8cjQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xmn7nP7YmEgS2CnFQSBnRNQqZYzWIhkd70oo/KXHUplm91Zb3fhqU/S0MOn7iwxJgkMiJiIA/TyHyjk6r8T81linyUSw2SEQ/6O73i3CAnf1XF1Ss+VzfNAKMMWg/7j8krQSWPEP/gVKL6bGgOY6a2IBBY1/0ZPy5IfXXx5yl9U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQXB/3hMmIBrNIrq6tdxj16TANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAE8ARwBVAEUAUQBIAEQAXABVAHMAZQByMB4XDTIyMDYwMjA4MjAxMFoXDTIzMDYwMjE0MjAxMFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBPAEcAVQBFAFEASABEAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxmn7nP7YmEgS2CnFQSBnRNQqZYzWIhkd70oo/KXHUplm91Zb3fhqU/S0MOn7iwxJgkMiJiIA/TyHyjk6r8T81linyUSw2SEQ/6O73i3CAnf1XF1Ss+VzfNAKMMWg/7j8krQSWPEP/gVKL6bGgOY6a2IBBY1/0ZPy5IfXXx5yl9UCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAxH/hsBdB6BVbUL6WZXob53DkQc+BZfxqH+QuwGczFWkbkZMRz1TnBjEc17pqyeXeU1JwuQAux50R3aq9efPsljgZ34P/SWMtmXQKr/ywMSHO7UxeyDVvASyPqGht0hFQFxMIj1WCIXvOYm+zdPYJj2pj6UYLjtAshCUh/HZj/TA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

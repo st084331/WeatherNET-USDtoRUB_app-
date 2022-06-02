@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherNETwin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="USD to RUB" Height="450" Width="800" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label x:Name="Exchangerate" Content="Exchangerate: No Info" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Currencyfreaks" Content="Currencyfreaks: No Info" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Currencyapi" Content="Currencyapi: No Info" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Openexchangerates" Content="Openexchangerates: No Info" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="UpdateButton" Content="Update" Margin="10,134,0,0" VerticalAlignment="Top" Height="25" HorizontalAlignment="Left" Width="141" Click="UpdateButton_Click"/>
+        <WpfPlot x:Name="RegressionPlot"  HorizontalAlignment="Left" Margin="288,90,0,0" VerticalAlignment="Top" Height="334" Width="502" IsManipulationEnabled="False"/>
+
+
     </Grid>
 </Window>
