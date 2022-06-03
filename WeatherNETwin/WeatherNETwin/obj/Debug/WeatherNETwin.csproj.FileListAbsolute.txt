@@ -21,16 +21,10 @@ D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\MathNet.Numerics.dl
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\System.ValueTuple.dll
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\MathNet.Numerics.xml
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\System.ValueTuple.xml
-D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\OxyPlot.dll
-D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\OxyPlot.Wpf.dll
-D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\OxyPlot.Wpf.Shared.dll
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\ScottPlot.dll
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\ScottPlot.WinForms.dll
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\ScottPlot.WPF.dll
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\System.Drawing.Common.dll
-D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\OxyPlot.xml
-D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\OxyPlot.Wpf.xml
-D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\OxyPlot.Wpf.Shared.xml
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\ScottPlot.xml
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\System.Drawing.Common.xml
 D:\NET PROG\WeatherNET\WeatherNETwin\WeatherNETwin\bin\Debug\Accord.dll.config

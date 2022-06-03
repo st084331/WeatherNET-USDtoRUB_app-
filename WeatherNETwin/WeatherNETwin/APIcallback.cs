@@ -36,7 +36,7 @@ namespace WeatherNETwin
         public static string[] currencyapiDataForRegression()
         {
             string[] ratesPerDay = new string[6];
-            for(int i = 0; i < 6; i++)
+            for(int i = 5; i >= 0; i--)
             {
                 string apiURL = "https://api.currencyapi.com/v3/historical?apikey=FVjRXEjsOd5uJPwWfo6a6EXvmDJGdhu19YFynWoM&currencies=RUB&date=" + DateTime.Now.AddDays(-(i+1)).ToString("yyyy/MM/dd").Replace('.', '-');
                 string jsonFormat = getInfoByAPI(apiURL);
@@ -49,7 +49,7 @@ namespace WeatherNETwin
         public static string[] openexchangeratesDataForRegression()
         {
             string[] ratesPerDay = new string[6];
-            for (int i = 0; i < 6; i++)
+            for (int i = 5; i >= 0; i--)
             {
                 string apiURL = "https://openexchangerates.org/api/historical/"+ DateTime.Now.AddDays(-(i + 1)).ToString("yyyy/MM/dd").Replace('.', '-') + ".json?app_id=ba9500c975284e3a90cfe80e3cf27a21";
                 string jsonFormat = getInfoByAPI(apiURL);

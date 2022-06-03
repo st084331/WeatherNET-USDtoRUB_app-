@@ -29,38 +29,48 @@ namespace WeatherNETwin
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             string todayCurrencyapi = APIcallback.getCurrencyapi();
-            string todayOpenexchangerates = APIcallback.getOpenexchangerates();;
-            Exchangerate.Content = "Exchangerate: " + APIcallback.getExchangerate();
-            Currencyfreaks.Content = "Currencyfreaks: " + APIcallback.getCurrencyfreaks();
+            string todayOpenexchangerates = APIcallback.getOpenexchangerates();
+            string todayExchangerate = APIcallback.getExchangerate();
+            string todayCurrencyfreaks = APIcallback.getCurrencyfreaks();
+            Exchangerate.Content = "Exchangerate: " + todayExchangerate;
+            Currencyfreaks.Content = "Currencyfreaks: " + todayCurrencyfreaks;
             Currencyapi.Content = "Currencyapi: " + todayCurrencyapi;
             Openexchangerates.Content = "Openexchangerates: " + todayOpenexchangerates;
-            Load_Plot(todayCurrencyapi, todayOpenexchangerates);
+            Load_Plot(todayCurrencyapi, todayOpenexchangerates, todayExchangerate, todayCurrencyfreaks);
         }
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            Exchangerate.Content = "Exchangerate: " + APIcallback.getExchangerate();
-            Currencyfreaks.Content = "Currencyfreaks: " + APIcallback.getCurrencyfreaks();
-            Currencyapi.Content = "Currencyapi: " + APIcallback.getCurrencyapi();
-            Openexchangerates.Content = "Openexchangerates: " + APIcallback.getOpenexchangerates();
+            string todayCurrencyapi = APIcallback.getCurrencyapi();
+            string todayOpenexchangerates = APIcallback.getOpenexchangerates();
+            string todayExchangerate = APIcallback.getExchangerate();
+            string todayCurrencyfreaks = APIcallback.getCurrencyfreaks();
+            Exchangerate.Content = "Exchangerate: " + todayExchangerate;
+            Currencyfreaks.Content = "Currencyfreaks: " + todayCurrencyfreaks;
+            Currencyapi.Content = "Currencyapi: " + todayCurrencyapi;
+            Openexchangerates.Content = "Openexchangerates: " + todayOpenexchangerates;
         }
 
-        private void Load_Plot(string todayCurrencyapi, string todayOpenexchangerates)
+        private void Load_Plot(string todayCurrencyapi, string todayOpenexchangerates, string todayExchangerate, string todayCurrencyfreaks)
         {
             string[] regres1 = APIcallback.currencyapiDataForRegression();
             string[] regres2 = APIcallback.openexchangeratesDataForRegression();
-            double[] y = new double[14];
-            double[] x = new double[14];
-            y[0] = Convert.ToDouble(todayCurrencyapi);
-            y[7] = Convert.ToDouble(todayOpenexchangerates);
-            x[0] = 1;
-            x[7] = 1;
+            double[] y = new double[16];
+            double[] x = new double[16];
+            y[6] = Convert.ToDouble(todayCurrencyapi);
+            y[13] = Convert.ToDouble(todayOpenexchangerates);
+            y[14] = Convert.ToDouble(todayExchangerate);
+            y[15] = Convert.ToDouble(todayCurrencyfreaks);
+            x[6] = 7;
+            x[13] = 7;
+            x[14] = 7;
+            x[15] = 7;
             for (int i = 0; i < 6; i++)
             {
-                x[i + 1] = i + 2;
-                x[i + 8] = i + 2;
-                y[i + 1] = Convert.ToDouble(regres1[i]);
-                y[i + 8] = Convert.ToDouble(regres2[i]);
+                x[i] = i + 1;
+                x[i+7] = i + 1;
+                y[i] = Convert.ToDouble(regres1[i]);
+                y[i+7] = Convert.ToDouble(regres2[i]);
             }
             var ls = new PolynomialLeastSquares()
             {
