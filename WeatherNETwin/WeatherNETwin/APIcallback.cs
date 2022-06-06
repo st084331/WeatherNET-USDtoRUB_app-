@@ -16,7 +16,7 @@ namespace WeatherNETwin
         private static string currencyapiAPI = "https://api.currencyapi.com/v3/latest?apikey=FVjRXEjsOd5uJPwWfo6a6EXvmDJGdhu19YFynWoM";
         private static string openexchangeratesAPI = "https://openexchangerates.org/api/latest.json?app_id=ba9500c975284e3a90cfe80e3cf27a21&base=USD";
 
-        public static string getInfoByAPI(string url)
+        private static string getInfoByAPI(string url)
         {
             string CorrectUrl = String.Format(url);
             WebRequest requestObj = WebRequest.Create(CorrectUrl);
